@@ -1,8 +1,65 @@
 /* add css styles here (optional) */
-
+.subheader {
+	width: 50%;
+}
+.header {
+	width: 50%;
+}
 .test {
   display: inline-block;
   margin: 2em auto;
   border: 2px solid #000;
   font-size: 2em;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 112px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 60%!important;
+
+}
+.positioner {
+	left: 0!important;	
+	position: static!important;
+	padding-bottom: 15px;
+}
+.subheader {
+	font-size: 14px!important;
+	padding-left: 1px!important;
+	padding-bottom: 15px;
+	width: 100%;
+}
+.header {
+	font-size: 22px!important;
+	padding-left: 1px!important;
+	padding-top: 30px!important;
+	padding-bottom: 15px;
+	width: 100%;
+}
+.overall {
+	height: auto!important;
+	width:100%;
+}
+ 
 }

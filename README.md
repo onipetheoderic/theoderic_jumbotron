@@ -8,24 +8,72 @@
 
 ```bash
 npm install --save theoderic_jumbotron
+yarn add theoderic_jumbotron
 ```
+## Description
+A very responsive Jumbotron with a button and a customizable link
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'theoderic_jumbotron'
+import ExampleComponent from 'theoderic_jumbotron'
 
-class Example extends Component {
+export default class App extends Component {
   render () {
     return (
-      <MyComponent />
+      <div>
+        <ExampleComponent HeaderText= "Default Header"
+    BackgroundColor= "#cb4335"
+    SubHeaderText= "Default SubHeaderText Default SubHeaderText Default SubHeaderTextDefault SubHeaderTextDefault SubHeaderTextDefault SubHeaderText"
+    Height= {300}
+    ButtonColor= 'orange'
+    HeaderTextColor= 'white'
+    SubHeaderTextColor= 'white'
+    HeaderTextSize= {40}
+    SubHeaderTextSize= {20}
+    ButtonLink= "https=//github.com/onipetheoderic"
+    buttonTextColor= 'white'
+    bgColorButton= 'yellow' />
+      </div>
     )
   }
 }
-```
 
+```
+## PropTypes
+  static propTypes = {
+    HeaderText: PropTypes.string,
+    BackgroundColor: PropTypes.string,
+    SubHeaderText: PropTypes.string,
+    ButtonWidth: PropTypes.string,
+    ButtonHeight: PropTypes.string,
+    ButtonColor: PropTypes.string,
+    HeaderTextColor: PropTypes.string,
+    SubHeaderTextColor: PropTypes.string,
+    ButtonRadius: PropTypes.number,
+    HeaderTextSize: PropTypes.number,
+    SubHeaderTextSize: PropTypes.number,
+    buttonTextColor: PropTypes.string,
+    bgColorButton: PropTypes.string
+ }
+
+ static defaultProps = {
+    HeaderText: "Default Header",
+    BackgroundColor: "#e5e7e9",
+    SubHeaderText: "Default SubHeaderText",
+    Height: 300,
+    ButtonColor: 'orange',
+    HeaderTextColor: 'black',
+    SubHeaderTextColor: 'black',
+    HeaderTextSize: 40,
+    SubHeaderTextSize: 20,
+    ButtonRadius: 0,
+    ButtonLink: "https://github.com/onipetheoderic",
+    buttonTextColor: 'white',
+    bgColorButton: 'orange'
+}
 ## License
 
 MIT © [onipetheoderic](https://github.com/onipetheoderic)
